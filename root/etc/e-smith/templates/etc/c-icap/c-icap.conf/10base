@@ -328,7 +328,7 @@ RemoteProxyUserHeaderEncoded on
 #	GroupSourceByUser hash:/etc/c-icap/c-icap-user-groups.txt
 
 # TAG: acl
-# Format: acl name type[{param}] value1 [value2] [...]
+# Format: acl name type[\{param\}] value1 [value2] [...]
 # Description:
 #	Supported acl types are:
 #		acl aclname service service1 ...
@@ -368,7 +368,7 @@ RemoteProxyUserHeaderEncoded on
 #	acl RESPMOD type RESPMOD
 #	acl REQMOD  type REQMOD
 #	acl ALLREQUESTS type OPTIONS RESPMOD REQMOD
-#	acl XHEAD icap_header{X-Test}  /value/
+#	acl XHEAD icap_header\{X-Test\}  /value/
 #	acl ECHO service echo
 #	acl localnet src 192.168.1.0/255.255.255.0
 #	acl localhost src 127.0.0.1/255.255.255.255
@@ -405,10 +405,10 @@ RemoteProxyUserHeaderEncoded on
 #	Name is a name for this log format.
 #	Format is a string with embedded % format codes. % format codes 
 #	has the following form:
-#	    % [-] [width] [{argument}] formatcode
+#	    % [-] [width] [\{argument\}] formatcode
 #	    if - is specified then the output is left aligned
 #	    if width specified then the field is exactly width size
-#	    some formatcodes support arguments given as {argument}
+#	    some formatcodes support arguments given as \{argument\}
 #	
 #	Format codes:
 #	       %a:  Remote IP-Address
@@ -644,7 +644,7 @@ Service echo srv_echo.so
 # Description:
 #	Add LDAP support to c-icap. The user can use LDAP based lookup tables
 #	using the following lookup table path:
-#	      ldap://[username:password@]ldapserver?base?attr1,attr2?filter[{[cache=no]}]
+#	      ldap://[username:password@]ldapserver?base?attr1,attr2?filter[\{[cache=no]\}]
 #	The filter can contain the "%s" formating code which will be replaced by
 #	the search key
 #	Examples of supported ldap urls:
