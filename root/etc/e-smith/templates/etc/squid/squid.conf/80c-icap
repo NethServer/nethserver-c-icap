@@ -1,0 +1,12 @@
+{
+   my $status = ${'c-icap'}{'status'} || 'disabled';
+   if ($status eq 'enabled') {
+       $OUT.="icap_enable on\n";
+       $OUT.="icap_send_client_ip on\n";
+       $OUT.="icap_send_client_username on\n";
+       $OUT.="icap_client_username_encode off\n";
+       $OUT.="icap_client_username_header X-Authenticated-User\n";
+       $OUT.="icap_preview_enable on\n";
+       $OUT.="icap_preview_size 1024\n";
+   }
+}
