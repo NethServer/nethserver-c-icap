@@ -180,7 +180,7 @@ MaxMemObject 131072
 # Default:
 #	DebugLevel 1
 {
-    $debug = ${'c-icap'}{'DebugLevel'} || '1';
+    $debug = ${'c-icap'}{'DebugLevel'} || '0';
     $OUT.="DebugLevel $debug\n";
 }
 
