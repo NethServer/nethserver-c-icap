@@ -8,6 +8,7 @@ Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 
 Requires: c-icap
+Requires: nethserver-base
 
 BuildRequires: perl
 BuildRequires: nethserver-devtools 
