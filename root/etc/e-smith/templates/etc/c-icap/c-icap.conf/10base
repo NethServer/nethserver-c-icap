@@ -474,7 +474,7 @@ ServerLog /var/log/c-icap/server.log
 #	AccessLog /var/log/c-icap/access.log
 # Example:
 #	AccessLog /var/log/c-icap/access.log MyFormat all
-AccessLog /var/log/c-icap/access.log
+AccessLog /dev/null
 
 # TAG: Logger
 # Format: Logger LoggerName
