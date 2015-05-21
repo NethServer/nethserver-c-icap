@@ -29,6 +29,7 @@ rm -rf %{buildroot}
 %files -f %{name}-%{version}-filelist
 %defattr(-,root,root)
 %doc COPYING
+%dir %{_nseventsdir}/%{name}-update
 
 %changelog
 * Wed Feb 05 2014 Davide Principi <davide.principi@nethesis.it> - 1.0.2-1.ns6
