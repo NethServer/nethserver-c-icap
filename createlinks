@@ -32,6 +32,6 @@ my $event = "nethserver-c-icap-update";
 event_actions($event, 'initialize-default-databases' => '00');
 templates2events("/etc/c-icap/c-icap.conf",  $event);
 templates2events("/etc/squid/squid.conf",  $event);
-event_services($event, 'c-icap' => 'reload');
+event_services($event, 'c-icap' => 'restart');
 event_services($event, 'squid' => 'reload');
 
