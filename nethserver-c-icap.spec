@@ -1,6 +1,6 @@
 Summary: NethServer c-icap configuration
 Name: nethserver-c-icap
-Version: 1.1.0
+Version: 1.1.1
 Release: 1%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name} 
@@ -32,6 +32,9 @@ rm -rf %{buildroot}
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Tue Sep 28 2021 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.1.1-1
+- c-icap not loading in arm - NethServer/dev#6573
+
 * Thu Jul 07 2016 Stefano Fancello <stefano.fancello@nethesis.it> - 1.1.0-1
 - First NS7 release
 
