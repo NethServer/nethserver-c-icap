@@ -35,3 +35,11 @@ templates2events("/etc/squid/squid.conf",  $event);
 event_services($event, 'c-icap' => 'restart');
 event_services($event, 'squid' => 'reload');
 
+#--------------------------------------------------
+# actions for post-restore-data event
+#--------------------------------------------------
+
+$event = "post-restore-data";
+event_actions($event, 
+   'nethserver-c-icap-fix-rsync-perms' => '10',
+);
